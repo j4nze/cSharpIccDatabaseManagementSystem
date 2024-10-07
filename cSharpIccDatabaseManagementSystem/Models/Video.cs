@@ -27,7 +27,21 @@ namespace cSharpIccDatabaseManagementSystem.Models
         }
         public void Create()
         {
-            
+            using (SqlConnection connection = new SqlConnection(DbConfig.ConnectionString))
+            {
+                connection.Open();
+                using (SqlCommand command = new SqlCommand("INSERT INTO Video VALUES (@Id, @Name, @Type, @Price, @TotalQty, @InQty, @OutQty)", connection))
+                {
+                    command.Parameters.AddWithValue("@Id", Id);
+                    command.Parameters.AddWithValue("@Name", Name);
+                    command.Parameters.AddWithValue("@Type", Type);
+                    command.Parameters.AddWithValue("@Price", Price);
+                    command.Parameters.AddWithValue("@TotalQty", TotalQty);
+                    command.Parameters.AddWithValue("@InQty", InQty);
+                    command.Parameters.AddWithValue("@OutQty", OutQty);
+                    command.ExecuteNonQuery();
+                }
+            }
         }
         public void Update()
         {
