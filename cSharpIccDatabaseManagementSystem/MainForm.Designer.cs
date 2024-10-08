@@ -31,6 +31,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.buttonDisplayAllRental = new System.Windows.Forms.Button();
             this.textBoxRentalCustomerIdSearch = new System.Windows.Forms.TextBox();
             this.textBoxRentalVideoIdSearch = new System.Windows.Forms.TextBox();
             this.buttonRentalRecordSearch = new System.Windows.Forms.Button();
@@ -56,14 +57,15 @@
             this.comboBoxRentalVideo = new System.Windows.Forms.ComboBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.S = new System.Windows.Forms.GroupBox();
+            this.buttonDisplayAll = new System.Windows.Forms.Button();
             this.buttonVideoIdSearch = new System.Windows.Forms.Button();
             this.textBoxVideoIdSearch = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.dataGridViewVideoLibrary = new System.Windows.Forms.DataGridView();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.textBoxVideoInQtyEntry = new System.Windows.Forms.TextBox();
             this.buttonAddQtyIn = new System.Windows.Forms.Button();
             this.numericUpDownQtyIn = new System.Windows.Forms.NumericUpDown();
-            this.comboBoxQtyInVideoId = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -88,7 +90,8 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dataGridViewCustomerLibrary = new System.Windows.Forms.DataGridView();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.textBoxCusomerIdSearch = new System.Windows.Forms.TextBox();
+            this.buttonDisplayAllCustomer = new System.Windows.Forms.Button();
+            this.textBoxCustomerIdSearch = new System.Windows.Forms.TextBox();
             this.buttonCustomerSearch = new System.Windows.Forms.Button();
             this.label23 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
@@ -133,7 +136,9 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1338, 538);
@@ -145,16 +150,17 @@
             this.tabPage2.Controls.Add(this.groupBox3);
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Controls.Add(this.groupBox1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1330, 509);
+            this.tabPage2.Size = new System.Drawing.Size(1330, 505);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Rental";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.buttonDisplayAllRental);
             this.groupBox4.Controls.Add(this.textBoxRentalCustomerIdSearch);
             this.groupBox4.Controls.Add(this.textBoxRentalVideoIdSearch);
             this.groupBox4.Controls.Add(this.buttonRentalRecordSearch);
@@ -167,6 +173,16 @@
             this.groupBox4.TabIndex = 9;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "SEARCH";
+            // 
+            // buttonDisplayAllRental
+            // 
+            this.buttonDisplayAllRental.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDisplayAllRental.Location = new System.Drawing.Point(282, 72);
+            this.buttonDisplayAllRental.Name = "buttonDisplayAllRental";
+            this.buttonDisplayAllRental.Size = new System.Drawing.Size(90, 30);
+            this.buttonDisplayAllRental.TabIndex = 11;
+            this.buttonDisplayAllRental.Text = "All";
+            this.buttonDisplayAllRental.UseVisualStyleBackColor = true;
             // 
             // textBoxRentalCustomerIdSearch
             // 
@@ -189,9 +205,9 @@
             this.buttonRentalRecordSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonRentalRecordSearch.Location = new System.Drawing.Point(282, 28);
             this.buttonRentalRecordSearch.Name = "buttonRentalRecordSearch";
-            this.buttonRentalRecordSearch.Size = new System.Drawing.Size(90, 76);
+            this.buttonRentalRecordSearch.Size = new System.Drawing.Size(90, 30);
             this.buttonRentalRecordSearch.TabIndex = 8;
-            this.buttonRentalRecordSearch.Text = "Search";
+            this.buttonRentalRecordSearch.Text = "Find";
             this.buttonRentalRecordSearch.UseVisualStyleBackColor = true;
             // 
             // label3
@@ -409,16 +425,17 @@
             this.tabPage1.Controls.Add(this.groupBox7);
             this.tabPage1.Controls.Add(this.groupBox6);
             this.tabPage1.Controls.Add(this.groupBox5);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1330, 509);
+            this.tabPage1.Size = new System.Drawing.Size(1330, 505);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Video Library";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // S
             // 
+            this.S.Controls.Add(this.buttonDisplayAll);
             this.S.Controls.Add(this.buttonVideoIdSearch);
             this.S.Controls.Add(this.textBoxVideoIdSearch);
             this.S.Controls.Add(this.label14);
@@ -430,10 +447,21 @@
             this.S.TabStop = false;
             this.S.Text = "SEARCH";
             // 
+            // buttonDisplayAll
+            // 
+            this.buttonDisplayAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDisplayAll.Location = new System.Drawing.Point(771, 20);
+            this.buttonDisplayAll.Name = "buttonDisplayAll";
+            this.buttonDisplayAll.Size = new System.Drawing.Size(200, 35);
+            this.buttonDisplayAll.TabIndex = 27;
+            this.buttonDisplayAll.Text = "Display All";
+            this.buttonDisplayAll.UseVisualStyleBackColor = true;
+            this.buttonDisplayAll.Click += new System.EventHandler(this.buttonDisplayAll_Click);
+            // 
             // buttonVideoIdSearch
             // 
             this.buttonVideoIdSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonVideoIdSearch.Location = new System.Drawing.Point(771, 18);
+            this.buttonVideoIdSearch.Location = new System.Drawing.Point(565, 21);
             this.buttonVideoIdSearch.Name = "buttonVideoIdSearch";
             this.buttonVideoIdSearch.Size = new System.Drawing.Size(200, 35);
             this.buttonVideoIdSearch.TabIndex = 26;
@@ -461,19 +489,26 @@
             // 
             // dataGridViewVideoLibrary
             // 
+            this.dataGridViewVideoLibrary.AllowUserToAddRows = false;
+            this.dataGridViewVideoLibrary.AllowUserToDeleteRows = false;
+            this.dataGridViewVideoLibrary.AllowUserToOrderColumns = true;
+            this.dataGridViewVideoLibrary.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewVideoLibrary.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewVideoLibrary.Location = new System.Drawing.Point(340, 78);
             this.dataGridViewVideoLibrary.Name = "dataGridViewVideoLibrary";
+            this.dataGridViewVideoLibrary.ReadOnly = true;
             this.dataGridViewVideoLibrary.RowHeadersWidth = 51;
             this.dataGridViewVideoLibrary.RowTemplate.Height = 24;
+            this.dataGridViewVideoLibrary.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewVideoLibrary.Size = new System.Drawing.Size(984, 425);
             this.dataGridViewVideoLibrary.TabIndex = 12;
+            this.dataGridViewVideoLibrary.SelectionChanged += new System.EventHandler(this.dataGridViewVideoLibrary_SelectionChanged);
             // 
             // groupBox7
             // 
+            this.groupBox7.Controls.Add(this.textBoxVideoInQtyEntry);
             this.groupBox7.Controls.Add(this.buttonAddQtyIn);
             this.groupBox7.Controls.Add(this.numericUpDownQtyIn);
-            this.groupBox7.Controls.Add(this.comboBoxQtyInVideoId);
             this.groupBox7.Controls.Add(this.label13);
             this.groupBox7.Controls.Add(this.label12);
             this.groupBox7.Location = new System.Drawing.Point(6, 6);
@@ -483,6 +518,14 @@
             this.groupBox7.TabIndex = 11;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "QUANTITY IN";
+            // 
+            // textBoxVideoInQtyEntry
+            // 
+            this.textBoxVideoInQtyEntry.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxVideoInQtyEntry.Location = new System.Drawing.Point(73, 33);
+            this.textBoxVideoInQtyEntry.Name = "textBoxVideoInQtyEntry";
+            this.textBoxVideoInQtyEntry.Size = new System.Drawing.Size(163, 30);
+            this.textBoxVideoInQtyEntry.TabIndex = 18;
             // 
             // buttonAddQtyIn
             // 
@@ -512,15 +555,6 @@
             0,
             0,
             0});
-            // 
-            // comboBoxQtyInVideoId
-            // 
-            this.comboBoxQtyInVideoId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxQtyInVideoId.FormattingEnabled = true;
-            this.comboBoxQtyInVideoId.Location = new System.Drawing.Point(73, 33);
-            this.comboBoxQtyInVideoId.Name = "comboBoxQtyInVideoId";
-            this.comboBoxQtyInVideoId.Size = new System.Drawing.Size(163, 33);
-            this.comboBoxQtyInVideoId.TabIndex = 15;
             // 
             // label13
             // 
@@ -706,6 +740,7 @@
             this.comboBoxVideoType.AutoCompleteCustomSource.AddRange(new string[] {
             "VCD",
             "DVD"});
+            this.comboBoxVideoType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxVideoType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxVideoType.FormattingEnabled = true;
             this.comboBoxVideoType.Items.AddRange(new object[] {
@@ -740,6 +775,7 @@
             this.textBoxVideoId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxVideoId.Location = new System.Drawing.Point(125, 22);
             this.textBoxVideoId.Name = "textBoxVideoId";
+            this.textBoxVideoId.ReadOnly = true;
             this.textBoxVideoId.Size = new System.Drawing.Size(190, 30);
             this.textBoxVideoId.TabIndex = 11;
             // 
@@ -759,27 +795,35 @@
             this.tabPage3.Controls.Add(this.groupBox10);
             this.tabPage3.Controls.Add(this.groupBox8);
             this.tabPage3.Controls.Add(this.groupBox9);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1330, 509);
+            this.tabPage3.Size = new System.Drawing.Size(1330, 505);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Customer Library";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // dataGridViewCustomerLibrary
             // 
+            this.dataGridViewCustomerLibrary.AllowUserToAddRows = false;
+            this.dataGridViewCustomerLibrary.AllowUserToDeleteRows = false;
+            this.dataGridViewCustomerLibrary.AllowUserToOrderColumns = true;
+            this.dataGridViewCustomerLibrary.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewCustomerLibrary.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewCustomerLibrary.Location = new System.Drawing.Point(340, 6);
             this.dataGridViewCustomerLibrary.Name = "dataGridViewCustomerLibrary";
+            this.dataGridViewCustomerLibrary.ReadOnly = true;
             this.dataGridViewCustomerLibrary.RowHeadersWidth = 51;
             this.dataGridViewCustomerLibrary.RowTemplate.Height = 24;
+            this.dataGridViewCustomerLibrary.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewCustomerLibrary.Size = new System.Drawing.Size(984, 497);
             this.dataGridViewCustomerLibrary.TabIndex = 13;
+            this.dataGridViewCustomerLibrary.SelectionChanged += new System.EventHandler(this.dataGridViewCustomerLibrary_SelectionChanged);
             // 
             // groupBox10
             // 
-            this.groupBox10.Controls.Add(this.textBoxCusomerIdSearch);
+            this.groupBox10.Controls.Add(this.buttonDisplayAllCustomer);
+            this.groupBox10.Controls.Add(this.textBoxCustomerIdSearch);
             this.groupBox10.Controls.Add(this.buttonCustomerSearch);
             this.groupBox10.Controls.Add(this.label23);
             this.groupBox10.Location = new System.Drawing.Point(6, 6);
@@ -790,23 +834,35 @@
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "SEARCH";
             // 
-            // textBoxCusomerIdSearch
+            // buttonDisplayAllCustomer
             // 
-            this.textBoxCusomerIdSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCusomerIdSearch.Location = new System.Drawing.Point(104, 33);
-            this.textBoxCusomerIdSearch.Name = "textBoxCusomerIdSearch";
-            this.textBoxCusomerIdSearch.Size = new System.Drawing.Size(211, 30);
-            this.textBoxCusomerIdSearch.TabIndex = 13;
+            this.buttonDisplayAllCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDisplayAllCustomer.Location = new System.Drawing.Point(165, 72);
+            this.buttonDisplayAllCustomer.Name = "buttonDisplayAllCustomer";
+            this.buttonDisplayAllCustomer.Size = new System.Drawing.Size(150, 35);
+            this.buttonDisplayAllCustomer.TabIndex = 14;
+            this.buttonDisplayAllCustomer.Text = "Display All";
+            this.buttonDisplayAllCustomer.UseVisualStyleBackColor = true;
+            this.buttonDisplayAllCustomer.Click += new System.EventHandler(this.buttonDisplayAllCustomer_Click);
+            // 
+            // textBoxCustomerIdSearch
+            // 
+            this.textBoxCustomerIdSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCustomerIdSearch.Location = new System.Drawing.Point(104, 33);
+            this.textBoxCustomerIdSearch.Name = "textBoxCustomerIdSearch";
+            this.textBoxCustomerIdSearch.Size = new System.Drawing.Size(211, 30);
+            this.textBoxCustomerIdSearch.TabIndex = 13;
             // 
             // buttonCustomerSearch
             // 
             this.buttonCustomerSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCustomerSearch.Location = new System.Drawing.Point(13, 72);
             this.buttonCustomerSearch.Name = "buttonCustomerSearch";
-            this.buttonCustomerSearch.Size = new System.Drawing.Size(302, 35);
+            this.buttonCustomerSearch.Size = new System.Drawing.Size(150, 35);
             this.buttonCustomerSearch.TabIndex = 11;
             this.buttonCustomerSearch.Text = "Find";
             this.buttonCustomerSearch.UseVisualStyleBackColor = true;
+            this.buttonCustomerSearch.Click += new System.EventHandler(this.buttonCustomerSearch_Click);
             // 
             // label23
             // 
@@ -838,6 +894,7 @@
             this.buttonUpdateCustomerLibraryRecord.TabIndex = 10;
             this.buttonUpdateCustomerLibraryRecord.Text = "Update";
             this.buttonUpdateCustomerLibraryRecord.UseVisualStyleBackColor = true;
+            this.buttonUpdateCustomerLibraryRecord.Click += new System.EventHandler(this.buttonUpdateCustomerLibraryRecord_Click);
             // 
             // buttonCreateCustomerLibraryRecord
             // 
@@ -848,6 +905,7 @@
             this.buttonCreateCustomerLibraryRecord.TabIndex = 8;
             this.buttonCreateCustomerLibraryRecord.Text = "Create";
             this.buttonCreateCustomerLibraryRecord.UseVisualStyleBackColor = true;
+            this.buttonCreateCustomerLibraryRecord.Click += new System.EventHandler(this.buttonCreateCustomerLibraryRecord_Click);
             // 
             // groupBox9
             // 
@@ -947,6 +1005,7 @@
             this.textBoxCustomerId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCustomerId.Location = new System.Drawing.Point(104, 22);
             this.textBoxCustomerId.Name = "textBoxCustomerId";
+            this.textBoxCustomerId.ReadOnly = true;
             this.textBoxCustomerId.Size = new System.Drawing.Size(211, 30);
             this.textBoxCustomerId.TabIndex = 11;
             // 
@@ -964,11 +1023,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(99)))), ((int)(((byte)(178)))));
             this.ClientSize = new System.Drawing.Size(1362, 562);
             this.Controls.Add(this.tabControl1);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.MaximizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BVS Management System";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
@@ -1049,7 +1112,6 @@
         private System.Windows.Forms.NumericUpDown numericUpDownQtyIn;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button buttonAddQtyIn;
-        private System.Windows.Forms.ComboBox comboBoxQtyInVideoId;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button buttonUpdateVideoLibraryRecord;
         private System.Windows.Forms.Button buttonVideoIdSearch;
@@ -1072,7 +1134,7 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.DataGridView dataGridViewCustomerLibrary;
         private System.Windows.Forms.TextBox textBoxCustomerAddress;
-        private System.Windows.Forms.TextBox textBoxCusomerIdSearch;
+        private System.Windows.Forms.TextBox textBoxCustomerIdSearch;
         private System.Windows.Forms.Button buttonCustomerSearch;
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
@@ -1081,6 +1143,10 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox textBoxVideoInQtyEntry;
+        private System.Windows.Forms.Button buttonDisplayAll;
+        private System.Windows.Forms.Button buttonDisplayAllCustomer;
+        private System.Windows.Forms.Button buttonDisplayAllRental;
     }
 }
 
